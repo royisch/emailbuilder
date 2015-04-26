@@ -1,0 +1,30 @@
+{
+  "name": "facebookTestApplication",
+  "version": "0.0.1",
+  "description": "this is a dummy facebook app\r =========",
+  "main": "gtuntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nir team",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-compass": "~0.7.0",
+	  "bower":"*",
+    "express": "~3.4.8",
+    "passport": "~0.2.0",
+    "passport-facebook": "~1.0.2"
+  },
+  "dependencies": {
+    "express": "~3.4.8"
+  }
+	
+}

@@ -1,0 +1,9 @@
+{
+    "name": "facebook-login",
+    "version": "0.0.0",
+    "main": "facebook",
+    "dependencies": {
+        "passport": ">= 0.0.0",
+        "passport-facebook": ">= 0.0.0"
+    }
+}
