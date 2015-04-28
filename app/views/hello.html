@@ -1,7 +1,7 @@
 <h1 test-directive>Hello World!</h1>
 <div class="col-md-12">
     <div class="row">
-        <div ng-repeat="(listName, list) in models.lists" class="col-md-6">
+        <div ng-repeat="(listName, list) in models.lists" class="col-md-4">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">List {{listName}}</h3>
@@ -17,9 +17,10 @@
                         {{item.label}}
                     </li>
                 </ul>
-
             </div>
         </div>
+        <!--<div class="col-md-4" ng-include="views/email_header_fields.html"></div>-->
+        <div class="col-md-4" data-ng-include data-src="'views/email_header_fields.html'"></div>
     </div>
 </div>
 

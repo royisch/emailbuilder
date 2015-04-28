@@ -1,4 +1,4 @@
-# Nir Team Demo Application
+# Email Application
 
 #Technologies:
  - Node JS
