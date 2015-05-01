@@ -1,0 +1,27 @@
+<h2 test-directive>Email Builder V0.1</h2>
+<div class="col-md-12">
+    <div class="row">
+        <div ng-repeat="(listName, list) in models.lists" ng-class="{'col-md-2': listName === 'definition','col-md-7': listName === 'email'}">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">List {{listName}}</h3>
+                </div>
+                <ul dnd-list="list">
+                    <li ng-repeat="item in list"
+                        dnd-draggable="item"
+                        dnd-copied="test(event)"
+                        dnd-dragged="test(event)"
+                        dnd-effect-allowed="move"
+                        dnd-selected="models.selected = item"
+                        ng-class="{'selected': models.selected === item}"
+                            >
+                        {{item.label}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3" data-ng-include data-src="'views/email_header_fields.html'"></div>
+    </div>
+</div>
+
+

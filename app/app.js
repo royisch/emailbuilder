@@ -6,11 +6,11 @@ var app;
     app.config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'views/hello.html',
+                templateUrl: 'views/landing.html',
                 controller: 'testCtrl'
             })
             .otherwise({
-                redirectTo: 'views/hello.html',
+                redirectTo: 'views/landing.html',
                 controller: 'testCtrl'
             });
     });
