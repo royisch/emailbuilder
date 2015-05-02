@@ -9,8 +9,8 @@
                 <ul dnd-list="list">
                     <li ng-repeat="item in list"
                         dnd-draggable="item"
-                        dnd-copied="test(event)"
-                        dnd-dragged="test(event)"
+                        dnd-copied="test()"
+                        dnd-dragged="test()"
                         dnd-effect-allowed="move"
                         dnd-selected="models.selected = item"
                         ng-class="{'selected': models.selected === item}"

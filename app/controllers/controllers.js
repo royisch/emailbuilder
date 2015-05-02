@@ -24,7 +24,6 @@ angular.module('App')
         });
 
         $scope.test = function(event) {
-            debugger;
         }
 
         $scope.$watch('models', function(model) {
@@ -32,4 +31,9 @@ angular.module('App')
         }, true);
 
         }
+    ])
+    .controller('sideCtrl',['$scope','$http','testModel', function ($scope, $http, testModel) {
+        console.log('controller initialized with model ==> ',testModel.getPeopleList());
+        $scope.type = testModel.getType();
+    }
     ]);

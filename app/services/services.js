@@ -10,9 +10,22 @@ angular.module('App').service("testModel", [function() {
         }
 
     this.list = [person1, person2];
+    this.type = 'a';
 
     this.getPeopleList = function() {
         return this.list;
+    };
+
+    this.setType = function(type) {
+        this.type = type;
+    };
+
+    this.getType = function() {
+        return this.type;
+    };
+
+    this.getSelected = function() {
+        return this.selected;
     };
 
 }]);

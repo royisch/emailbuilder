@@ -14,8 +14,8 @@ module.exports = {
 
     getElementsForMail: function () {
         return [
-            {label: "Header-email"},
-            {label: "Footer-email"}
+            {label: "Header-email", type:'header'},
+            {label: "Footer-email", type:'footer'}
         ];
 
     }
