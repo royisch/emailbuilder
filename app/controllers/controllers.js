@@ -23,7 +23,9 @@ angular.module('App')
                 console.log('Error getting elements');
         });
 
-        $scope.test = function(event) {
+        $scope.test = function(item) {
+            $scope.models.selected = item;
+            this.setType(item.type);
         }
 
         $scope.$watch('models', function(model) {

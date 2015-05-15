@@ -6,13 +6,13 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">List {{listName}}</h3>
                 </div>
-                <ul dnd-list="list">
+                <ul dnd-list="list" >
                     <li ng-repeat="item in list"
                         dnd-draggable="item"
                         dnd-copied="test()"
                         dnd-dragged="test()"
                         dnd-effect-allowed="move"
-                        dnd-selected="models.selected = item"
+                        dnd-selected="test(item)"
                         ng-class="{'selected': models.selected === item}"
                             >
                         {{item.label}}

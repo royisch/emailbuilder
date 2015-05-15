@@ -24,8 +24,6 @@ angular.module('App').service("testModel", [function() {
         return this.type;
     };
 
-    this.getSelected = function() {
-        return this.selected;
-    };
+    
 
 }]);
