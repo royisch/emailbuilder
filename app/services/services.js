@@ -24,6 +24,6 @@ angular.module('App').service("testModel", [function() {
         return this.type;
     };
 
-    
+
 
 }]);
